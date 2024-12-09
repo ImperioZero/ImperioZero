@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Império Zero - Guia Definitivo</title>
+    <style>
+        /* Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #0b0d10;
+            color: #ffffff;
+            line-height: 1.6;
+            scroll-behavior: smooth;
+        }
+
+        /* Cabeçalho */
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.85);
+            padding: 20px 60px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1000;
+            border-bottom: 1px solid #1a1a1a;
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: bold;
+            color: #00d4ff;
+        }
+
+        nav a {
+            margin-left: 30px;
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 16px;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #00d4ff;
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #00101a, #00304a);
+            text-align: center;
+            padding: 0 20px;
+        }
+
+        .hero h1 {
+            font-size: 60px;
+            color: #00d4ff;
+            margin-bottom: 20px;
+            animation: fadeInDown 1s ease-in-out;
+        }
+
+        .hero p {
+            font-size: 20px;
+            max-width: 600px;
+            margin: 0 auto 40px;
+            color: #cccccc;
+            animation: fadeInUp 1s ease-in-out;
+        }
+
+        .cta-button {
+            padding: 15px 40px;
+            font-size: 18px;
+            background: #00d4ff;
+            color: #ffffff;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background 0.3s ease, transform 0.2s ease;
+            animation: fadeIn 1.2s ease-in-out;
+        }
+
+        .cta-button:hover {
+            background: #007abf;
+            transform: scale(1.05);
+        }
+
+        /* Sobre Section */
+        .sobre {
+            padding: 100px 20px;
+            background: #101418;
+            text-align: center;
+        }
+
+        .sobre h2 {
+            font-size: 48px;
+            color: #00d4ff;
+            margin-bottom: 20px;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        .sobre p {
+            font-size: 18px;
+            max-width: 800px;
+            margin: 0 auto;
+            color: #b0b0b0;
+            line-height: 1.8;
+            animation: fadeInUp 1s ease-in-out;
+        }
+
+        /* Ebook Section */
+        .ebook {
+            padding: 100px 20px;
+            text-align: center;
+            background: linear-gradient(135deg, #00101a, #00304a);
+        }
+
+        .ebook h2 {
+            font-size: 48px;
+            color: #00d4ff;
+            margin-bottom: 20px;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        .ebook p {
+            font-size: 18px;
+            max-width: 800px;
+            margin: 0 auto 30px;
+            color: #cccccc;
+            animation: fadeInUp 1s ease-in-out;
+        }
+
+        .ebook a {
+            display: inline-block;
+            padding: 15px 40px;
+            font-size: 18px;
+            background: #00d4ff;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background 0.3s ease, transform 0.2s ease;
+            animation: fadeIn 1.2s ease-in-out;
+        }
+
+        .ebook a:hover {
+            background: #007abf;
+            transform: scale(1.05);
+        }
+
+        /* Footer */
+        footer {
+            padding: 20px;
+            text-align: center;
+            background: #0b0d10;
+            color: #777777;
+            border-top: 1px solid #1a1a1a;
+        }
+
+        footer a {
+            color: #00d4ff;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        footer a:hover {
+            color: #007abf;
+        }
+
+        /* Animações */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <div class="logo">Império Zero</div>
+        <nav>
+            <a href="#sobre">Sobre</a>
+            <a href="#ebook">Ebook</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Bem-vindo ao Império Zero</h1>
+        <p>Transforme sua realidade financeira com estratégias simples e eficazes. Descubra como lucrar de forma rápida e prática com a Temu.</p>
+    </section>
+
+    <!-- Sobre Section -->
+    <section id="sobre" class="sobre">
+        <h2>Sobre o Império Zero</h2>
+        <p>O Império Zero é a sua porta de entrada para a liberdade financeira. Nosso guia detalhado ensina como utilizar a Temu para gerar rendimentos de forma acessível e escalável.</p>
+    </section>
+
+    <!-- Ebook Section -->
+    <section id="ebook" class="ebook">
+        <h2>Baixe o Guia Definitivo</h2>
+        <p>Tenha acesso ao conhecimento que pode mudar sua vida. Clique no botão abaixo para baixar o nosso eBook exclusivo.</p>
+        <a href="file:///C:/Users/Windows%2010/Downloads/Guia%20Definitivo%20do%20Império%20Zero.pdf" target="_blank">Baixar Agora</a>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Império Zero. Todos os direitos reservados. <a href="#">Política de Privacidade</a></p>
+    </footer>
+</body>
+</html>
